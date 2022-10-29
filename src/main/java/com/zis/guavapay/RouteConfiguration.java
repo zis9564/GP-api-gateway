@@ -21,12 +21,8 @@ public class RouteConfiguration {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("statistic_id", r -> r.path("/parcels/**")
-                        .uri(parcelUri)
-                )
-                .route("user_id", r -> r.path("/users/**")
-                        .uri(userUri)
-                )
+                .route(r -> r.path("/users/**")
+                        .uri(userUri))
                 .build();
     }
 

@@ -1,4 +1,22 @@
-###
-GET http://localhost:8080/
 
+GET http://localhost:8080/users
+###
+POST http://localhost:8080/users/saveUser
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "firstName": "ivan",
+    "lastName": "zakharov"
+  }
+###
+
+POST http://localhost:8080/users/findByName
+Content-Type: application/json
+
+{
+  "id": null,
+  "firstName": "stas",
+  "lastName": "zakharov"
+}
 ###
