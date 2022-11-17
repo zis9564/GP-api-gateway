@@ -1,22 +1,11 @@
-
-GET http://localhost:8080/users
-###
-POST http://localhost:8080/users/saveUser
+POST http://127.0.0.1:8080/users/new-user
 Content-Type: application/json
 
   {
-    "id": 1,
-    "firstName": "ivan",
-    "lastName": "zakharov"
+    "id": "20acec80-3bb0-462f-9241-5360c27b173a",
+    "lastname": "zakharov",
+    "name": "IVA",
+    "phone": "12345",
+    "role": "00000000-0000-0000-0000-000000000000"
   }
-###
-
-POST http://localhost:8080/users/findByName
-Content-Type: application/json
-
-{
-  "id": null,
-  "firstName": "stas",
-  "lastName": "zakharov"
-}
 ###

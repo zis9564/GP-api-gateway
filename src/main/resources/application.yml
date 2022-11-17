@@ -1,12 +1,5 @@
+
 server:
   port: 8080
-service:
-  parcel:
-    uri: http://${PARCEL_SERVICE_DOMAIN:localhost}:8082
-  user:
-    uri: http://${USER_SERVICE_DOMAIN:localhost}:8081
-
-#spring:
-#  cloud:
-#    gateway:
-#      routes:
+service.parcel.uri: http://172.17.0.1:8072
+service.user.uri: http://172.17.0.1:8071
